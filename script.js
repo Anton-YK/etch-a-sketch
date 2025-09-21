@@ -1,3 +1,5 @@
+//function that creates grid
+
 function createGrid(n) {
   const container = document.querySelector(".container");
   for (let i = 0; i < n; i++) {
@@ -13,3 +15,12 @@ function createGrid(n) {
   }
 }
 createGrid(16);
+
+//sketch function
+const cells = document.querySelectorAll(".cell");
+
+cells.forEach((cell) => {
+  cell.addEventListener("mouseover", () => {
+    cell.style.backgroundColor = "black";
+  });
+});
